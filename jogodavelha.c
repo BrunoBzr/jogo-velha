@@ -54,7 +54,7 @@ void mostrarMatriz(char matriz[3][3]){
 	for(i=0;i<3;i++){
 		for(j=0;j<3;j++){
 			if(j==2){
-				printf(" \t%c ",matriz[i][j]);
+				printf(" %c ",matriz[i][j]);
 				printf("\n");
 				if(i!=2){
 					printf("-----------");
