@@ -3,7 +3,6 @@
 #include <stdlib.h>
 //  \n
 
-
 typedef struct {
 	   char	nome[100];
 	   char x_O;
@@ -37,6 +36,15 @@ void main(){
 			gets(jogadores[0].nome);
 			printf("Informe o nome do jogador 2: ");
 			gets(jogadores[1].nome);
+			printf("%s voce vai querer X ou O?: ",jogadores[0].nome);
+			scanf("%c", &jogadores[0].x_O);
+			jogadores[0].x_O = toupper(jogadores[0].x_O);
+			
+			if(jogadores[0].x_O =='X'){
+				jogadores[1].x_O = 'O';
+			}else{
+				jogadores[1].x_O = 'X';
+			}
 			mostrarMatriz(matriz);
 			system("pause");
 			break;
