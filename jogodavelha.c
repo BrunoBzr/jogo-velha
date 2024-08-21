@@ -4,8 +4,6 @@
 //  \n
 
 
-//testettetetetete
-
 typedef struct {
 	   char	nome[100];
 	   char x_O;
