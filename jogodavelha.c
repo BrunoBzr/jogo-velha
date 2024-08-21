@@ -50,12 +50,11 @@ void main(){
 
 void mostrarMatriz(char matriz[3][3]){
 	system("cls");
-	printf("------- JOGO DA VELHA -------\n\n");
 	int i,j;
 	for(i=0;i<3;i++){
 		for(j=0;j<3;j++){
 			if(j==2){
-				printf(" %c ",matriz[i][j]);
+				printf(" \t%c ",matriz[i][j]);
 				printf("\n");
 				if(i!=2){
 					printf("-----------");
