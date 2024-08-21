@@ -31,6 +31,12 @@ void main(){
 		switch(op)
 		{
 		case '1':
+			system("cls");
+			fflush(stdin);
+			printf("Informe o nome do jogador 1: ");
+			gets(jogadores[0].nome);
+			printf("Informe o nome do jogador 2: ");
+			gets(jogadores[1].nome);
 			mostrarMatriz(matriz);
 			system("pause");
 			break;
